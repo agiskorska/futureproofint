@@ -1,0 +1,284 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body{
+    background-color: black;
+    position: relative;
+    min-height: 100vh;
+}
+
+body::after{
+    content: "";
+    background: linear-gradient(180deg, #F0CA01 0%, #F0AD01 100%);
+    width: 60%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 20%;
+    z-index: -1;
+}
+
+.head, .card, .card__content, .bio, .form, .label{
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head>*{
+    z-index: 2;
+    margin: 3% 0%;
+}
+
+.head__img{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    display: block;
+}
+
+.card{
+    flex-direction: column;
+    color: white;
+}
+
+.card__title{
+    font-family: 'Fredericka the Great';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    padding-bottom: 1%;
+}
+
+.card__subtitle{
+    padding-bottom: 50px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+}
+
+.card__content{
+    background: #BA1100;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    width: 60%;
+}
+
+.bio{
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.bio>*{
+    z-index: 2;
+}
+
+.bio::after{
+    content:"";
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 20%;
+    top:0;
+    background: linear-gradient(96.49deg, #1C255C 5.56%, #06438E 96.93%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bio__title{
+    font-family: 'Fredericka the Great';
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.bio__list, .bio__outro{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+.pol-1{
+    position: absolute;
+    top: -20%;
+    left: 26%;
+    z-index: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #EE3402;
+    transform: rotate(-34.01deg);
+}
+
+.pol-2{
+    position: absolute;
+    top: -18%;
+    left: 30%;
+    z-index: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #C65504;
+    transform: rotate(20.92deg);
+}
+
+.pol-3{
+    position: absolute;
+    bottom: -10%;
+    right: 26%;
+    z-index: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #689F03;
+    transform: rotate(-34.01deg);
+}
+
+.pol-4{
+    position: absolute;
+    bottom: -10%;
+    right: 22%;
+    z-index: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #0249A6;
+    transform: rotate(20.92deg);
+}
+
+.contact-form{
+    min-height: 30vh;
+}
+
+.form{
+    padding: 0 10%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    font-family: 'fascinate';
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.label{
+    width: 50%;   
+    padding: 10px;
+}
+
+.label__text{
+    flex-basis: 30%;
+    background-image: url('https://images.pexels.com/photos/1258740/pexels-photo-1258740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size:     cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,.2);
+    text-align: right;
+
+}
+
+.input{
+    flex-basis: 60%;
+    width: 60%;
+    padding: 5% 3%;
+    border: none;
+    background: #D9D9D9;
+    border-radius: 10px;
+}
+
+.btn{
+
+    border-radius: 10px;
+    width: 30%;
+    height: 50px;
+    background-color: #EE3402;
+    font-family: 'fascinate';
+    font-size: 40px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width: 1400px){
+    .form{
+        padding: 0;
+    }
+    .head{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 1200px){
+    .form{
+        font-size: 25px;
+    }
+
+}
+
+@media(max-width: 900px){
+    .card__subtitle{
+        font-size: 20px;
+    }
+    .form{
+        font-size: 20px;
+    }
+
+    .pol-1, .pol-2, .pol-3, .pol-4{
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+    }
+
+    .pol-1{
+        border-bottom: 50px solid #EE3402;
+        top: -12%;
+    }
+
+    .pol-2{
+        border-bottom: 50px solid #C65504;
+        top: -12%;
+    }
+    .pol-3{
+        border-bottom: 50px solid #689F03;
+        bottom: -8%;
+    }
+
+    .pol-4{
+        border-bottom: 50px solid #0249A6;
+        bottom: -8%;
+    }
+}
